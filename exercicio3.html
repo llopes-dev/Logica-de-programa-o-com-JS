@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Lógica de Programação com JS</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Lógica de Programação - Aula 02.02</h1>
+        
+        <hr>
+
+        <script>
+
+            // fazer o player1 digitar um numero
+
+            var player1 = prompt ("type de number one");
+            player1 = parseInt(player1);
+
+            // fazer o player2 digitar um numero
+
+            var player2 = prompt( "type the number tow");
+            player2 = parseInt(player2);
+
+            if(player1 === player2){
+                alert("Vocês Empataram")
+            }else{
+
+                // sortear um numero entre 0 e 1
+
+                var sorteado = parseInt(Math.random() * 2);
+
+                // se o numero sorteado for 0, ganha quem escolher o numero MENOR
+
+                if(sorteado === 0){
+                    if(player1 < player2){
+                        alert("Ganhou o Player 1")
+                    }else{
+                        alert("Ganhou o Player 2")
+                    }
+                }else{
+                    if(player1 > player2){
+                        alert("Ganhou o Player 1")
+                    }else{
+                        alert("ganhou o player 2")
+                    }
+                }
+
+                // se o numero sorteado for 1, ganha quem escoher o numer MAIOR
+            }
+
+        
+        </script>
+
+    </body>
+
+</html>
+ 
