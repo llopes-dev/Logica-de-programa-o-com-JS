@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Lógica de Programação com JS</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Exercício 10</h1>
+        
+        <hr>
+
+        <script>
+            
+            var ano = 1004;
+            
+            while(ano <= 2017){
+
+                if(!(ano % 100 === 0) || (ano % 400 === 0)){
+                    document.write(ano + '<br>');
+                }else{
+                    document.write(ano + ' O ano não é bissexto')
+                }
+
+                // ano = ano + 4;
+                ano += 4;
+                
+
+            }
+        </script>
+
+    </body>
+
+</html>
+ 
