@@ -15,24 +15,47 @@
 
             // função para Mostrar a Tabuada
             function mostrarTabuada(){
-                alert('Mostrar tabuada chamada');
+
+
+                // perguntar o numero para o usuário
+
+                var n = prompt('digite seu numero');
+
+                limparTabuada();
+
+                // converter o numero
+
+                n = parseFloat(n);
+
+                // criar uma variavel que servira de indice
+
+                var i = 1;
+
+                // enquanto indice <= 1000 
+                        // concatena na variavel mensagel
+
+                        while(i <= 1000){
+                            mensagem += n  + ' x ' + i + ' = ' + (n * i) + '<br>';
+                            i++;
+                        }
+
+                output.innerHTML = mensagem;
+
+
+                // mostra mensagem no output
+                
             }
 
-            mostrarTabuada();
-
-
-            function limparTabuada (){
-                alert('Limpar a tabuada Chamada')
+            function limparTabuada(){
+                mensagem = '';
+                output.innerHTML = mensagem;
             }
-
-            limparTabuada()
+           
 
             var output = document.querySelector("#output")
 
             var mensagem = '';
             
-
-            output.innerHTML = mensagem;
             
         </script>
 
